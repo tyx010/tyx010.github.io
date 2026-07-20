@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuxin Tang — Homepage</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1a1a2e;
+            --muted: #555;
+            --accent: #2563eb;
+            --border: #e5e7eb;
+            --card-bg: #f9fafb;
+            --tag-bg: #eff6ff;
+            --tag-text: #1d4ed8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.7;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }
+
+        header {
+            display: flex;
+            align-items: flex-start;
+            gap: 32px;
+            margin-bottom: 48px;
+            flex-wrap: wrap;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .header-info h1 {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 4px;
+        }
+
+        .header-info .chinese-name {
+            font-size: 18px;
+            color: var(--muted);
+            font-weight: 400;
+            margin-bottom: 12px;
+        }
+
+        .header-info .meta {
+            font-size: 15px;
+            color: var(--muted);
+        }
+
+        .header-info .meta .institution {
+            color: var(--text);
+            font-weight: 500;
+        }
+
+        .links {
+            display: flex;
+            gap: 16px;
+            margin-top: 12px;
+            flex-wrap: wrap;
+        }
+
+        .links a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .links a:hover { text-decoration: underline; }
+
+        .links .icon {
+            width: 16px;
+            height: 16px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .bio p {
+            margin-bottom: 12px;
+            color: var(--muted);
+        }
+
+        .interest-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .interest-tags span {
+            background: var(--tag-bg);
+            color: var(--tag-text);
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .contact-item .label {
+            color: var(--muted);
+            min-width: 80px;
+        }
+
+        .contact-item a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .contact-item a:hover { text-decoration: underline; }
+
+        footer {
+            margin-top: 64px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        @media (max-width: 500px) {
+            header { flex-direction: column; align-items: center; text-align: center; }
+            .links { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="avatar">YT</div>
+    <div class="header-info">
+        <h1>Yuxin Tang</h1>
+        <div class="chinese-name">汤宇新</div>
+        <div class="meta">
+            <span class="institution">Huazhong University of Science and Technology</span><br>
+            Undergraduate Student · Electronic Information Engineering
+        </div>
+        <div class="links">
+            <a href="mailto:tangyuxin@hust.edu.cn">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a2 2 0 0 1-2.06 0L2 7"/></svg>
+                Email
+            </a>
+            <a href="https://github.com/yuxintang" target="_blank">
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+            </a>
+        </div>
+    </div>
+</header>
+
+<section class="bio">
+    <h2>About</h2>
+    <p>
+        I am an undergraduate student at <strong>Huazhong University of Science and Technology</strong>,
+        majoring in <strong>Electronic Information Engineering</strong>.
+        My research interests lie in artificial intelligence and machine learning.
+    </p>
+    <p>
+        I am passionate about building intelligent systems and exploring the frontiers of AI research.
+        Currently, I am seeking opportunities to deepen my understanding and contribute to the AI/ML community.
+    </p>
+</section>
+
+<section>
+    <h2>Research Interests</h2>
+    <div class="interest-tags">
+        <span>Artificial Intelligence</span>
+        <span>Machine Learning</span>
+        <span>Deep Learning</span>
+        <span>Computer Vision</span>
+        <span>Natural Language Processing</span>
+    </div>
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <div class="contact-item">
+        <span class="label">Email</span>
+        <a href="mailto:tangyuxin@hust.edu.cn">tangyuxin@hust.edu.cn</a>
+    </div>
+    <div class="contact-item">
+        <span class="label">Institution</span>
+        <span>Huazhong University of Science and Technology, Wuhan, China</span>
+    </div>
+</section>
+
+<footer>
+    &copy; 2026 Yuxin Tang. Last updated: July 2026.
+</footer>
+
+</body>
+</html>
